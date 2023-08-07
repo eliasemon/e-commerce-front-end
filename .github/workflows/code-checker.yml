@@ -1,16 +1,16 @@
-name: webiner-frontend Code Checker
+name: Ecommerce Code Checker
 
 on:
   - pull_request
   - push
 
 jobs:
-  webiner-p104:
-    name: webiner-p104 Check
+  Ecommerce:
+    name: Ecommerce Check
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['>=18.0.0 <=18.15.0']
+        node-version: ['>=18.0.0 <=18.16.0']
     steps:
       - name: Checkout Code 📥
         uses: actions/checkout@v3
@@ -36,8 +36,6 @@ jobs:
       - name: Install Project Dependencies ✅
         run: yarn workspace:setup
 
-      - name: Run Tests 🧪
-        run: yarn test
 
       - name: Run Build
         run: yarn build

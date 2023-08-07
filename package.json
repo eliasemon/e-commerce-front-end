@@ -4,7 +4,7 @@
     "private": true,
     "engines": {
         "npm": ">=9.0.0 <=9.6.6",
-        "node": ">=18.0.0 <=18.15.0"
+        "node": ">=18.0.0 <=18.16.0"
     },
     "scripts": {
         "workspace:setup": "yarn install --frozen-lockfile && yarn prepare",

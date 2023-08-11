@@ -92,3 +92,55 @@ export const CategoryStyled = styled(Link)`
         background-color: #ccc;
     }
 `;
+
+export const CategorySectionStyle = styled(Container)`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`;
+
+export const CategoryBoxGroup = styled(Box)`
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 1rem 0;
+`;
+
+export const CategoryBoxStyled = styled(Box)`
+    min-height: 25rem;
+    width: 20%;
+    background-color: teal;
+    border-radius: 0.5rem;
+    position: relative;
+    background-size: cover;
+
+    &:hover {
+        cursor: pointer;
+    }
+`;
+
+export const ProductsSectionHeader = styled(Box)`
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+`;
+
+export const ProductList = styled(Box)`
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+`;
+
+export const Product = styled(Box)`
+    width: 270px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(1.025);
+    }
+`;

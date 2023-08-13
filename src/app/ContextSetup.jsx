@@ -9,7 +9,7 @@ const ContextSetup = ({ children }) => {
     return (
         <>
             <StyledEngineProvider injectFirst>
-                <ThemeProvider theme={theme('dark')}>
+                <ThemeProvider theme={theme('light')}>
                     {children}
                     <CssBaseline />
                 </ThemeProvider>

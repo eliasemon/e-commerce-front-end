@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { ContactCardStyled } from './styleComponents';
+import { ContactCardStyled } from './Header.styled';
 
 const ContactCard = ({ icon, title, subtitle }) => {
     return (

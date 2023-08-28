@@ -3,7 +3,7 @@ import {
     SearchButtonIcon,
     SearchContainer,
     SearchInput,
-} from './styleComponents';
+} from './Header.styled';
 
 const Search = () => {
     return (

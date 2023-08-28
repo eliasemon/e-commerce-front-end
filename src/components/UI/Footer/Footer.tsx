@@ -1,3 +1,5 @@
+'use client';
+
 import { Box, Typography } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -6,7 +8,7 @@ import {
     FooterContainer,
     FooterStyled,
     LinkList,
-} from './styleComponents/Footer.styled';
+} from './Footer.styled';
 
 const Footer = () => {
     const categories = [

@@ -1,6 +1,6 @@
 import { Box, Chip } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-import { CategoryList, NavbarContainer, NavbarStyled } from './styleComponents';
+import { CategoryList, NavbarContainer, NavbarStyled } from './Header.styled';
 import Category from './Category';
 
 const Navbar = () => {

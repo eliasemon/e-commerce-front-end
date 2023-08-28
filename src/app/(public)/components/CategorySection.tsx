@@ -1,6 +1,8 @@
 import { Box, Button } from '@mui/material';
-import { CategoryBoxGroup, CategorySectionStyle } from './styleComponents';
-import CategoryBox from './CategoryBox';
+import { CategoryBoxGroup } from '@root/components/UI/categories/categories.styled';
+import Link from 'next/link';
+import { CategorySectionStyle } from './styleComponents';
+import CategoryBox from '../../../components/UI/categories/CategoryBox';
 
 const CategorySection = () => {
     const categories = [
@@ -25,7 +27,9 @@ const CategorySection = () => {
                 ))}
             </CategoryBoxGroup>
             <Box>
-                <Button variant="contained">All Categories</Button>
+                <Link href="/categories">
+                    <Button variant="contained">All Categories</Button>
+                </Link>
             </Box>
         </CategorySectionStyle>
     );

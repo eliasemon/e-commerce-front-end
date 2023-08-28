@@ -3,6 +3,8 @@ import { Inter } from 'next/font/google';
 // import Navbar from '@root/components/navbar';
 // import Footer from '@root/components/footer/Footer';
 import ContextSetup from './ContextSetup';
+import Header from '../components/UI/Header/Header';
+import Footer from '../components/UI/Footer/Footer';
 
 const roboto = Inter({
     weight: ['300', '400', '500', '600', '700', '800'],
@@ -25,7 +27,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
             <body className={roboto.className}>
                 <ContextSetup>
                     {/* <Navbar /> */}
+                    <Header />
                     {children}
+                    <Footer />
                     {/* <Footer /> */}
                 </ContextSetup>
             </body>

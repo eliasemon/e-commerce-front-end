@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material';
-import { CategoryBoxStyled } from './styleComponents';
+import { CategoryBoxStyled } from './categories.styled';
 
 const CategoryBox = ({ categoryName, imageNo }) => {
     return (

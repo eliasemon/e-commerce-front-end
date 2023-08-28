@@ -1,20 +1,32 @@
 'use client';
 
-import React from 'react';
-import Header from './Header';
+import { Button, Container, Typography } from '@mui/material';
+import ProductCard from '@root/components/UI/products/ProductCard';
+import Link from 'next/link';
 import CategorySection from './CategorySection';
-import ProductsSection from './ProductsSection';
-import Footer from './Footer';
+import ProductsSection from '../../../components/UI/products/ProductsSection';
 import Banner from './Banner';
+import { ProductsSectionHeader } from './styleComponents';
 
 const HomePage = () => {
     return (
         <>
-            <Header />
             <CategorySection />
             <Banner />
-            <ProductsSection />
-            <Footer />
+            <Container maxWidth="lg">
+                <ProductsSectionHeader>
+                    <Typography variant="h5">All Products</Typography>
+                    <Link href={'/browse'}>
+                        <Button variant="contained">See all products</Button>
+                    </Link>
+                </ProductsSectionHeader>
+                <ProductsSection>
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                    <ProductCard />
+                </ProductsSection>
+            </Container>
         </>
     );
 };

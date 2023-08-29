@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import Link from 'next/link';
 import {
@@ -11,6 +11,7 @@ import {
 } from './Footer.styled';
 
 const Footer = () => {
+    const theme = useTheme();
     const categories = [
         'Drinkware',
         'Glassware',
@@ -23,7 +24,9 @@ const Footer = () => {
     ];
     return (
         <>
-            <FooterStyled>
+            <FooterStyled
+                sx={{ backgroundColor: theme.palette.backgroundColor.main }}
+            >
                 <FooterContainer maxWidth="lg">
                     <Box>
                         <Image

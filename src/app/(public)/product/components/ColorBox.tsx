@@ -12,17 +12,22 @@ const ColorBox: React.FC<ColorBoxProps> = ({ colorName }) => {
                 display: 'flex',
                 alignItems: 'center',
                 gap: 1,
+                border: '1px solid #ddd',
+                borderRadius: '5px',
+                padding: '0.25rem',
 
                 '&:hover': {
                     cursor: 'pointer',
+                    backgroundColor: '#ddd',
+                    border: '1px solid #eee',
                 },
             }}
         >
             <Image
                 alt={colorName}
                 src="/cardImages/0.png"
-                width={25}
-                height={25}
+                width={50}
+                height={50}
             />
             <Typography variant="body1">{colorName}</Typography>
         </Box>

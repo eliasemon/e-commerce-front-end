@@ -17,8 +17,10 @@ export const CategoryBoxStyled = styled(Box)`
     position: relative;
     background-size: cover;
     overflow: hidden;
+    transition: 0.3s;
 
     &:hover {
         cursor: pointer;
+        transform: scale(1.05);
     }
 `;

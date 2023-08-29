@@ -7,6 +7,7 @@ import CustomTabPanel from './CustomTabPanel';
 import PricingTable from './PricingTable';
 import PrintOptions from './PrintOptions';
 import TabsGroup from './TabsGroup';
+import PriceCalculator from './PriceCalculator';
 
 const Product = () => {
     const [value, setValue] = useState(0);
@@ -24,7 +25,14 @@ const Product = () => {
     return (
         <Container maxWidth="lg" sx={{ my: 3 }}>
             <Box sx={{ display: 'flex', gap: 3 }}>
-                <Box sx={{ width: '40%' }}>
+                <Box
+                    sx={{
+                        width: '40%',
+                        position: 'sticky',
+                        top: '200px',
+                        left: '100px',
+                    }}
+                >
                     <Box>
                         <img
                             src="/cardImages/0.png"
@@ -37,23 +45,56 @@ const Product = () => {
                             <img
                                 src="/cardImages/1.png"
                                 alt="image"
-                                style={{ width: '100%' }}
+                                style={{ width: '100%', height: '100%' }}
                             />
                         </Box>
                         <Box>
                             <img
                                 src="/cardImages/2.png"
                                 alt="image"
-                                style={{ width: '100%' }}
+                                style={{ width: '100%', height: '100%' }}
                             />
                         </Box>
                         <Box>
                             <img
                                 src="/cardImages/3.png"
                                 alt="image"
-                                style={{ width: '100%' }}
+                                style={{ width: '100%', height: '100%' }}
                             />
                         </Box>
+                    </Box>
+                    <Box sx={{ p: 2 }}>
+                        <Typography
+                            fontSize={'1.5rem'}
+                            fontWeight={600}
+                            sx={{ mb: 2 }}
+                        >
+                            Highlight Features :{' '}
+                        </Typography>
+                        <ul>
+                            <li>
+                                <Typography>
+                                    Traditional Ceramic Mugs in Seventeen
+                                    Spectacular Colors
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography>
+                                    Smooth Molded Ceramic Composite
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography>
+                                    Glossy Color Exterior with Matching Color
+                                    Interior
+                                </Typography>
+                            </li>
+                            <li>
+                                <Typography>
+                                    Easy Comfort Grip C-Curved Handle
+                                </Typography>
+                            </li>
+                        </ul>
                     </Box>
                 </Box>
                 <Box
@@ -106,15 +147,15 @@ const Product = () => {
                         </Box>
                         <CustomTabPanel value={value} index={0}>
                             <PricingTable />
-                            <PrintOptions value={value} />
+                            <PrintOptions />
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={1}>
                             <PricingTable />
-                            <PrintOptions value={value} />
+                            <PrintOptions />
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={2}>
                             <PricingTable />
-                            <PrintOptions value={value} />
+                            <PrintOptions />
                         </CustomTabPanel>
                         <CustomTabPanel value={value} index={3}>
                             <Box>
@@ -130,6 +171,7 @@ const Product = () => {
                                 </Typography>
                             </Box>
                         </CustomTabPanel>
+                        <PriceCalculator />
                     </Box>
                 </Box>
             </Box>

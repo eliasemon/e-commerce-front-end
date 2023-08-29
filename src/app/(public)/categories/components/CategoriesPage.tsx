@@ -27,9 +27,9 @@ const CategoriesPage = () => {
             <CategoryBoxGroup>
                 {categories.map((category, index) => (
                     <CategoryBox
-                        key={index}
                         categoryName={category}
                         imageNo={index % 4}
+                        key={index}
                     />
                 ))}
             </CategoryBoxGroup>

@@ -1,15 +1,18 @@
-import { orange, grey } from '@mui/material/colors';
-
 export const lightPalette = {
     primary: {
-        main: orange[700],
-        contrastText: '#f5f5f5',
+        dark: '#183D3D', // Replace with your primary color
+        main: '#5C8374', // Replace with your primary color
+        light: '#93B1A6', // Replace with your primary color
+        contrastText: '#fff', // Replace with text color that contrasts well with primary
     },
     secondary: {
-        main: '#212020',
+        dark: '#352F44', // Replace with your secondary color
+        main: '#5C5470', // Replace with your secondary color
+        light: '#B9B4C7', // Replace with your secondary color
+        contrastText: '#000', // Replace with text color that contrasts well with primary
     },
     backgroundColor: {
-        main: grey[50],
-        light: grey[100],
+        main: '#D4EDF8', // Replace with your main background color
+        light: '#E0E0E0', // Replace with a lighter background color
     },
 };

@@ -2,7 +2,6 @@ import { Box, Container } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
 export const FooterStyled = styled(Box)`
-    background-color: #e6effd;
     margin-top: 2rem;
     padding: 3rem 0;
 `;

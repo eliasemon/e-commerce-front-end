@@ -31,7 +31,6 @@ export const SearchInput = styled('input')`
 
 export const SearchButton = styled('button')`
     border-radius: 0.5rem;
-    background-color: #1a57d0;
     border: none;
     width: 2.5rem;
     height: 2.5rem;
@@ -66,7 +65,6 @@ export const ContactCardStyled = styled(Box)`
 `;
 
 export const NavbarContainer = styled(Box)`
-    background-color: #e6effd;
     padding: 1rem 0;
 `;
 
@@ -82,12 +80,12 @@ export const CategoryList = styled(Box)`
 `;
 
 export const CategoryStyled = styled(Link)`
-    color: #222;
-    padding: 0.125rem 0.5rem;
-    border-radius: 1rem;
+    margin: 0 0.125rem;
+    padding: 0.25rem 0.85rem;
+    border-radius: 5px;
 
     &:hover {
         cursor: pointer;
-        background-color: #ccc;
+        background-color: #6fc3e8;
     }
 `;

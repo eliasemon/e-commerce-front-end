@@ -1,3 +1,4 @@
+import { useTheme } from '@mui/material';
 import {
     SearchButton,
     SearchButtonIcon,
@@ -6,10 +7,13 @@ import {
 } from './Header.styled';
 
 const Search = () => {
+    const theme = useTheme();
     return (
         <SearchContainer>
             <SearchInput placeholder="Search for products" />
-            <SearchButton>
+            <SearchButton
+                style={{ backgroundColor: theme.palette.primary.main }}
+            >
                 <SearchButtonIcon />
             </SearchButton>
         </SearchContainer>

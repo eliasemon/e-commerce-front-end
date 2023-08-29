@@ -1,18 +1,18 @@
-import { grey } from '@mui/material/colors';
-
 export const darkPalette = {
     primary: {
-        main: '#F95C25',
-        contrastText: '#ffff',
+        dark: '#183D3D', // Replace with your primary color
+        main: '#5C8374', // Replace with your primary color
+        light: '#93B1A6', // Replace with your primary color
+        contrastText: '#FFFFFF', // Replace with text color that contrasts well with primary
     },
     secondary: {
-        main: '#ffff',
-        light: '#F3F1F1D1',
-        thin: 'rgba(255,255,255,0.4)',
+        dark: '#352F44', // Replace with your secondary color
+        main: '#5C5470', // Replace with your secondary color
+        light: '#B9B4C7', // Replace with your secondary color
+        contrastText: '#FFFFFF', // Replace with text color that contrasts well with primary
     },
     backgroundColor: {
-        main: grey[900],
-        light: '#293235',
-        thin: '#BDD0EC33',
+        main: '#F5F5F5', // Replace with your main background color
+        light: '#E0E0E0', // Replace with a lighter background color
     },
 };

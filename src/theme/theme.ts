@@ -38,6 +38,7 @@ export const theme = (mode = 'dark') => {
                     styleOverrides: {
                         root: {
                             textTransform: 'capitalize',
+                            color: colorPalette.primary.contrastText,
                         },
                     },
                 },
@@ -62,7 +63,7 @@ export const theme = (mode = 'dark') => {
                     fontSize: 18,
                 },
                 body1: {
-                    color: theme.secondary.light,
+                    color: theme.secondary.contrastText,
                 },
             }),
         }),

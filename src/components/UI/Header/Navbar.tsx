@@ -1,9 +1,10 @@
-import { Box, Chip } from '@mui/material';
+import { Box, Chip, useTheme } from '@mui/material';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { CategoryList, NavbarContainer, NavbarStyled } from './Header.styled';
 import Category from './Category';
 
 const Navbar = () => {
+    const theme = useTheme();
     const categories = [
         'Drinkware',
         'Glassware',
@@ -15,11 +16,17 @@ const Navbar = () => {
         'Highlighters',
     ];
     return (
-        <NavbarContainer>
+        <NavbarContainer
+            sx={{ backgroundColor: theme.palette.backgroundColor.main }}
+        >
             <NavbarStyled maxWidth="lg">
                 <CategoryList>
                     {categories.map((category) => (
-                        <Category link="/" key={category} title={category} />
+                        <Category
+                            link="/browse"
+                            key={category}
+                            title={category}
+                        />
                     ))}
                 </CategoryList>
                 <Box sx={{ position: 'relative' }}>

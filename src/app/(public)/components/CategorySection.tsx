@@ -1,6 +1,6 @@
+import Link from 'next/link';
 import { Box, Button } from '@mui/material';
 import { CategoryBoxGroup } from '@root/components/UI/categories/categories.styled';
-import Link from 'next/link';
 import { CategorySectionStyle } from './styleComponents';
 import CategoryBox from '../../../components/UI/categories/CategoryBox';
 
